@@ -3,6 +3,7 @@
 #include "cinder/gl/gl.h"
 #include "Kinect2.h"
 #include "cinder/params/Params.h"
+#include "kat_decision_tree.h"
 
 using namespace ci;
 using namespace ci::app;
