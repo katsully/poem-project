@@ -44,11 +44,11 @@ inline int kat_decision_tree(const std::vector<double> & feature_vector)
 {
 	if (feature_vector.at(14) <= 0.54) {
 		if (feature_vector.at(11) <= 0.33) {
-			if (feature_vector.at(21) <= -0.07) {
-				return 0;
+			if (feature_vector.at(20) <= -0.2) {
+				return 3;
 			}
 			else {
-				return 3;
+				return 0;
 			}
 		}
 		else {
@@ -56,7 +56,7 @@ inline int kat_decision_tree(const std::vector<double> & feature_vector)
 				return 4;
 			}
 			else {
-				if (feature_vector.at(17) <= -0.23) {
+				if (feature_vector.at(14) <= 0.41) {
 					return 1;
 				}
 				else {
